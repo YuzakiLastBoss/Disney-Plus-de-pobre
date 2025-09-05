@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    *{
+        font-family: "Roboto", sans-serif;
+        font-weight: bolder;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-weight: bolder;
+      background: radial-gradient(circle at bottom, #173354, #0B0C21);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      background-attachment: fixed;
+    }
+    
+    .logo {
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    .menu a:hover {
+      color: #e62429; /* vermelho Marvel */
+    }
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .grid {
+      background-color: #0e2137;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0px;
+      border-radius: 30px;
+      padding: 20px;
+    }
+
+    .card {
+      width: 300px;
+      height: 400px;
+      margin: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.2s;
+      
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
