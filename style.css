@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    *{
+        font-family: "Roboto", sans-serif;
+        font-weight: bolder;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-weight: bolder;
+      background: radial-gradient(circle at bottom, #173354, #0B0C21);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+
+    header {
+      text-align: left;
+      padding: 20px;
+    }
+
+    .header img {
+      width: 120px;              /* ajusta o tamanho do logo */
+      margin-bottom: 10px;
+    }
+
+    .header h2 {
+      font-size: 22px;           /* deixa o texto maior */
+      font-weight: 700;          /* deixa a fonte mais grossa */
+      color: white;
+      margin: 0;                 /* tira espaçamentos extras */
+    }
+
+    .catalogo {
+      display: flex;
+      justify-content: center;
+      gap: 75px;
+      flex-wrap: wrap;
+      margin: -10px 0;
+    
+    }
+
+    .catalogo img {
+      width: 260px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+
+    .catalogo img:hover {
+      transform: scale(1.05);
+    }
+
+    .cta {
+      margin: 50px 0 40px;
+    }
+
+    .cta button {
+      background: white;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: #ddd;
+      transform: scale(1.07);
+    }
