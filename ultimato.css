@@ -28,8 +28,23 @@
     margin-left: 0px;
     }
 
-    
+    .filme {
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 1000px; /* opcional */
+  margin: auto;
+}
 
+
+    .filme video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* força ocupar todo espaço */
+  background-color: black; /* fundo preto por trás */
+}
 
 
     

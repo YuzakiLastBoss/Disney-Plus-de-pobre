@@ -73,3 +73,25 @@
       background: #ddd;
       transform: scale(1.07);
     }
+
+    @media screen and (max-width: 1020px){
+      .catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+        gap: 15px;  /* espaço entre os posters */
+        padding: 10px;
+      }
+
+      .catalogo img {
+        width: 100%;      /* ocupa todo o espaço da célula */
+        height: 200px;    /* altura fixa para todos ficarem iguais */
+        object-fit: cover; /* corta a imagem para caber sem distorcer */
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+        transition: transform 0.3s;
+      }
+
+      .cta button{
+        margin-top: 0px;
+      }
+    }
