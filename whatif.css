@@ -50,3 +50,26 @@
   }
 }
 
+  .primeiroep{
+    display: flex;
+    color: #383838;         /* cor do texto */
+  text-decoration: none; /* remove o sublinhado */
+  background-color: #fff9f9;
+  padding: 1px;
+  border-radius: 12px;
+  margin-left: 25vh;
+  margin-top: 10vh;
+  height: 50px;
+  width: 500px;
+  font-size: 15px;
+  }
+
+
+  .primeiroep:hover{
+    color: #131313;
+  }
+
+  .imagemBase{
+    height: 230px;
+    width: 400px;
+  }
