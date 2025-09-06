@@ -62,23 +62,22 @@
 
     @media screen and (max-width: 1020px) {
       .card {
+        flex: 0 0 auto;          /* não cresce nem encolhe */
+        width: 80px;            /* largura fixa */
+        height: auto;
+        aspect-ratio: 2 / 3;     /* mantém proporção pôster */
         border-radius: 12px;
-        margin: 0;
-        width: 120px;   /* largura fixa */
-        height: 180px;  /* altura fixa */
+        overflow: hidden;
+        background: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
-        background: #000;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        flex-shrink: 0; /* 🔥 evita que reduza sozinho */
       }
 
       .card img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* 🔥 garante o corte certo */
+        object-fit: cover;       /* garante que preencha sem distorcer */
         display: block;
       }
 
@@ -92,6 +91,7 @@
         border-radius: 20px;
       }
     }
+
 
 
     .card:hover {
